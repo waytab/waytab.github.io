@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="icon" type="image/png" href="./img/icon32.png" />
+
+  <title>Custom Background - WayTab</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid mb-0 bg-dark text-white">
+    <div class="container">
+      <h1 class="display-2">Custom Background</h1>
+      <p class="lead">How to use WayTab's Custom Background feature</p>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <p>WayTab 1.1 added support for custom backgrounds, allowing for an image url, rgb (or rgba) color, or hex color.</p><br>
+      <h3>How to activate the Custom Background feature</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Activating the feature is easy:</p>
+          <ol>
+            <li>Open Settings (upper right corner)</li>
+            <li>Click on the Background dropdown menu</li>
+            <li>Select "Custom..."</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <img class="featurette" src="img/selecting_custom.png" />
+          <p class="text-muted">Selecting the "Custom..." option in WayTab</p>
+        </div>
+      </div>
+      <h3>Setting your custom background</h3><br>
+      <h5>Using an image</h5>
+      <div class="row">
+        <div class="col-md-8">
+          <p>WayTab supports URLs to images hosted elsewhere on the web.</p>
+          <ol>
+            <li>Find an image on the web</li>
+            <li>Copy and paste its URL in the "Custom Background" box</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <img class="featurette" src="img/sample-img.gif" />
+          <p class="text-muted">A sample background image. Supports GIFs. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image">here</a>
+            for supported image formats.</p>
+        </div>
+      </div>
+      <h5>Using RGB and RGBA colors</h5>
+      <div class="row">
+        <div class="col-md-8">
+          <p>RGB and RGBA colors use an 8-bit-per-color format to specify red, green, and blue values for a solid color. RGBA also supports a fourth alpha channel, which is out of 1.</p>
+          <ul>
+            <li>You can use <a href="https://www.google.com/search?q=color+picker">Google's color picker</a> to find a color to use.</li>
+            <li>RGB and RGBA colors must be wrapped by either <code>rgb()</code> or <code>rgba()</code>, respectively.</li>
+            <li>A sample RGB color might be <code>rgb(244, 67, 54)</code>, which is red (see image on right)</li>
+            <li>A sample RGBa color might be <code>rgba(244, 67, 54, 0.75)</code>, which is the same shade of red, but with 75% opacity</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img class="featurette" src="img/color-picker.png" />
+          <p class="text-muted">Google's color picker, showing Red 500.</p>
+        </div>
+      </div>
+      <h5>Using HEX colors</h5>
+        <p>HEX colors provide an alternate way of displaying solid colors, using base-16 pairs.</p>
+        <ol>
+          <li>HEX component pairs are expressed between 00 and FF, since the distance between 0 and F is 16, and 16^2 is 256</li>
+          <li>In other words, <code>#FF0000</code> is the same as <code>rgb(255, 0, 0)</code></li>
+          <li>HEX values with same-letter pairs can be shortened. i.e. <code>#FF2200</code> can be shortened to <code>#F20</code></li>
+          <li>You can use <a href="https://www.google.com/search?q=color+picker">Google's color picker</a> to find a color to use.</li>
+          <li>Google's Material Design spec includes <a href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">some great color palettes</a>.</li>
+        </ol>
+      </div>
+    </div>    
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
