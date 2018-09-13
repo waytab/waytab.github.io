@@ -54,22 +54,25 @@
             <li>Find an image on the web</li>
             <li>Copy and paste its URL in the "Custom Background" box</li>
           </ol>
+          <ul>
+            <li>Supports GIFs and most other raster- and vector-based images</li>
+            <li>See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image">here</a> for supported image formats.</li>
+          </ul>
         </div>
         <div class="col-md-4">
           <img class="featurette" src="img/sample-img.gif" />
-          <p class="text-muted">A sample background image. Supports GIFs. See <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/image">here</a>
-            for supported image formats.</p>
+          <p class="text-muted">A sample background image.</p>
         </div>
       </div>
-      <h5>Using RGB and RGBA colors</h5>
+      <h5>Using RGB and RGBa colors</h5>
       <div class="row">
         <div class="col-md-8">
-          <p>RGB and RGBA colors use an 8-bit-per-color format to specify red, green, and blue values for a solid color. RGBA also supports a fourth alpha channel, which is out of 1.</p>
+          <p>RGB and RGBa colors use an 8-bit-per-color format to specify red, green, and blue values for a solid color. RGBa also supports a fourth alpha channel, which is out of 1.</p>
           <ul>
             <li>You can use <a href="https://www.google.com/search?q=color+picker">Google's color picker</a> to find a color to use.</li>
-            <li>RGB and RGBA colors must be wrapped by either <code>rgb()</code> or <code>rgba()</code>, respectively.</li>
+            <li>RGB and RGBa colors must be wrapped by either <code>rgb()</code> or <code>rgba()</code>, respectively.</li>
             <li>A sample RGB color might be <code>rgb(244, 67, 54)</code>, which is red (see image on right)</li>
-            <li>A sample RGBa color might be <code>rgba(244, 67, 54, 0.75)</code>, which is the same shade of red, but with 75% opacity</li>
+            <li>A sample RGBa color might be <code>rgba(244, 67, 54, 0.75)</code>, which is the same shade of red, but only 75% opaque (25% transparent)</li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -77,15 +80,15 @@
           <p class="text-muted">Google's color picker, showing Red 500.</p>
         </div>
       </div>
-      <h5>Using HEX colors</h5>
-        <p>HEX colors provide an alternate way of displaying solid colors, using base-16 pairs.</p>
-        <ol>
-          <li>HEX component pairs are expressed between 00 and FF, since the distance between 0 and F is 16, and 16^2 is 256</li>
+      <h5>Using Hex colors</h5>
+        <p>Hex colors provide an alternate way of displaying solid colors, using base-16 (hexadecimal) pairs.</p>
+        <ul>
+          <li>Hex component pairs are expressed between 00 and FF, since the distance between 0 and F is 16, and 16^2 is 256</li>
           <li>In other words, <code>#FF0000</code> is the same as <code>rgb(255, 0, 0)</code></li>
-          <li>HEX values with same-letter pairs can be shortened. i.e. <code>#FF2200</code> can be shortened to <code>#F20</code></li>
+          <li>Hex values with same-letter pairs can be shortened. i.e. <code>#FF2200</code> can be shortened to <code>#F20</code></li>
           <li>You can use <a href="https://www.google.com/search?q=color+picker">Google's color picker</a> to find a color to use.</li>
           <li>Google's Material Design spec includes <a href="https://material.io/design/color/the-color-system.html#tools-for-picking-colors">some great color palettes</a>.</li>
-        </ol>
+        </ul>
       </div>
     </div>    
   </div>
